@@ -77,7 +77,8 @@ abstract class MarkdownElementBuilder {
   /// to [preferredStyle].
   ///
   /// If you needn't build a widget, return null.
-  Widget? visitElementAfter(md.Element element, TextStyle? preferredStyle) =>
+  Widget? visitElementAfter(md.Element element, TextStyle? preferredStyle,
+          TextStyle? parentStyle) =>
       null;
 }
 

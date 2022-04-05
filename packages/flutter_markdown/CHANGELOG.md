@@ -1,3 +1,7 @@
+## 0.6.10
+
+ * Added access to parent element style for MarkdownElementBuilder
+
 ## 0.6.9+1
 
  * Remove build status badge from `README.md`

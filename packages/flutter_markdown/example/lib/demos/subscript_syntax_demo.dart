@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:markdown/markdown.dart' as md;
+
 import '../shared/markdown_demo_widget.dart';
 
 // ignore_for_file: public_member_api_docs
@@ -144,7 +145,8 @@ class SubscriptBuilder extends MarkdownElementBuilder {
   ];
 
   @override
-  Widget visitElementAfter(md.Element element, TextStyle? preferredStyle) {
+  Widget visitElementAfter(
+      md.Element element, TextStyle? preferredStyle, TextStyle? parentStyle) {
     // We don't currently have a way to control the vertical alignment of text spans.
     // See https://github.com/flutter/flutter/issues/10906#issuecomment-385723664
     final String textContent = element.textContent;
